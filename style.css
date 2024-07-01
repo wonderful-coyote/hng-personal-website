@@ -1,0 +1,169 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 8px 0;
+    text-align: left;
+}
+
+header p {
+    margin: 4px 0;
+    text-align: left;
+}
+
+header div {
+    margin: 4px 0;
+    text-align: left;
+}
+
+header .box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+main {
+    max-width: 800px;
+    background: white;
+    padding: 32px;
+    margin: 32px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+section {
+    margin-bottom: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+ul li ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    white-space: pre-wrap;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+/* Responsive styles */
+@media (min-width: 500px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 32px;
+    }
+
+    .box-1 {
+        margin-right: 32px;
+    }
+
+    .box-2 {
+        margin-left: 32px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .box-1,
+    .box-2 {
+        padding: 16px;
+        flex: 1;
+    }
+}
+
+@media (max-width: 499px) {
+    header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-1,
+    .box-2 {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    header .box-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
